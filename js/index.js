@@ -2,13 +2,19 @@ let timeZone = "";
 let language = "";
 $(document).ready(function(){
 
-	// add name
-	let name = getUrlParameter("name");
+	// add to name
+	const name = getUrlParameter("name");
 	$("#name").html(name);
+	// add from name
+	const family = getUrlParameter("family");
+	if (family == "true"){
+		$("#appelation").html("Ant, Mel, Ethan and Elana");
+		$("#appelation").attr("href", "https://photos.app.goo.gl/zMM4qhBg2mjdrTtL9")
+	}
 	// add place and time
 	addLocationAndTime();
 	// add snow
-  initLetItSnow();
+    initLetItSnow();
 
 	// set time update
 	setInterval(updateTime, 1000);
