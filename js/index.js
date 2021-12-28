@@ -8,8 +8,9 @@ $(document).ready(function(){
 	// add from name
 	const family = getUrlParameter("family");
 	if (family == "true"){
-		$("#appelation").html("Ant, Mel, Ethan and Elana");
-		$("#appelation").attr("href", "https://photos.app.goo.gl/zMM4qhBg2mjdrTtL9")
+		$("#appellation").html("Ant, Mel, Ethan and Elana");
+		$("#appellation").attr("href", "https://photos.app.goo.gl/zMM4qhBg2mjdrTtL9")
+		$("#appellation").attr("target", "_blank")
 	}
 	// add place and time
 	addLocationAndTime();
